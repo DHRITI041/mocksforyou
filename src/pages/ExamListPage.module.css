@@ -1,0 +1,250 @@
+.root {}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 64px;
+  color: var(--color-neutral-500);
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.error {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-error-600);
+  background: var(--color-error-50);
+  border: 1px solid #fca5a5;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.pageHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-neutral-900);
+}
+
+.subtitle {
+  font-size: 14px;
+  color: var(--color-neutral-500);
+  margin-top: 4px;
+}
+
+.createBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--color-primary-600);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background 0.15s, transform 0.1s;
+}
+
+.createBtn:hover {
+  background: var(--color-primary-700);
+  transform: translateY(-1px);
+}
+
+.empty {
+  text-align: center;
+  padding: 80px 24px;
+  color: var(--color-neutral-400);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.empty h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-neutral-600);
+}
+
+.empty p {
+  font-size: 14px;
+  color: var(--color-neutral-400);
+}
+
+.emptyBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--color-primary-600);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-top: 8px;
+  transition: background 0.15s;
+}
+
+.emptyBtn:hover {
+  background: var(--color-primary-700);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border: 1.5px solid var(--color-neutral-200);
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: box-shadow 0.15s, transform 0.15s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
+}
+
+.cardTop {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.examTitle {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--color-neutral-900);
+}
+
+.examDesc {
+  font-size: 13px;
+  color: var(--color-neutral-500);
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.metaItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  color: var(--color-neutral-500);
+  background: var(--color-neutral-100);
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.metaNeg {
+  background: var(--color-error-50);
+  color: var(--color-error-600);
+}
+
+.marksRow {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.marksTag {
+  font-size: 12px;
+  font-weight: 600;
+  background: var(--color-secondary-50);
+  color: var(--color-secondary-700);
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.negTag {
+  font-size: 12px;
+  font-weight: 600;
+  background: var(--color-error-50);
+  color: var(--color-error-600);
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.noNegTag {
+  font-size: 12px;
+  font-weight: 600;
+  background: var(--color-neutral-100);
+  color: var(--color-neutral-500);
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 4px;
+  border-top: 1px solid var(--color-neutral-100);
+}
+
+.editBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-neutral-600);
+  background: var(--color-neutral-100);
+  padding: 7px 14px;
+  border-radius: 7px;
+  flex: 1;
+  justify-content: center;
+  transition: background 0.15s;
+}
+
+.editBtn:hover {
+  background: var(--color-neutral-200);
+}
+
+.startBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  background: var(--color-primary-600);
+  padding: 7px 14px;
+  border-radius: 7px;
+  flex: 2;
+  justify-content: center;
+  transition: background 0.15s;
+}
+
+.startBtn:hover {
+  background: var(--color-primary-700);
+}
